@@ -1,15 +1,66 @@
-.item{
-    border: 2px solid;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+}
+
+.container {
+    text-align: center;
+}
+
+.signup-form {
+    background-color: #333;
     padding: 20px;
-    margin-top: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.one{
-    overflow: scroll;
-    background-color: brown;
+
+.signup-form h2 {
+    color: #fff;
+    margin-bottom: 20px;
 }
-.pop{
-    display: grid;
-    grid-template-columns: 50% 49%;
-    grid-gap: 10px;
-    grid-auto-rows: 200px;
+
+.signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+    background-color: #444;
+    color: #fff;
+}
+
+.signup-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signup-form button:hover {
+    background-color: #555;
+}
+
+.footer-text {
+    color: #333;
+    margin-top: 10px;
 }
